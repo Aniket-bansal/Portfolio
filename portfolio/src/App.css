@@ -1,6 +1,29 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  /* padding: 0; */
+  aspect-ratio: auto;
 }
 .App{
+  background-color: #fff;
+  /* border: 1px solid red; */
+  height: 100%;
+  width: 100%;
+  background-image:linear-gradient(45deg,#ff6596,#60bef8,#d88cff);
+  background-size: 600% 600%;
+  animation: Appanimatedgradient 8s infinite linear;
   
 }
+
+@keyframes Appanimatedgradient{
+  0%{
+    background-position: 0 85% ;
+  }
+  50%{
+    background-position: 100% 20% ;
+  }
+  100%{
+    background-position:0 85%;
+  }
+
+}
+
