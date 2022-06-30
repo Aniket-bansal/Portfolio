@@ -2,6 +2,8 @@
   margin: 0;
   /* padding: 0; */
   aspect-ratio: auto;
+  /* font-family: 'Dancing Script', cursive; */
+  font-family: 'Poppins', sans-serif;
 }
 .App{
   background-color: #fff;
@@ -11,7 +13,9 @@
   background-image:linear-gradient(45deg,#ff6596,#60bef8,#d88cff);
   background-size: 600% 600%;
   animation: Appanimatedgradient 8s infinite linear;
-  
+  text-align: center;
+  /* margin-top: -100px; */
+  position: fixed;
 }
 
 @keyframes Appanimatedgradient{
@@ -26,4 +30,83 @@
   }
 
 }
+.App>.nav{
+  /* border: 1px solid red; */
+  height: 100px;
+}
+.nav>.nav-container{
+  /* border: 1px solid blue; */
+ height: 100%;
+ background-color: #fff;
+ display: flex;
+ gap: 20px;
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+ position: relative;
+ z-index: 12;
+}
 
+.nav-container>div{
+  /* border: 1px solid green; */
+  height: 100%;
+  width: 50%;
+}
+.nav-container>div:nth-child(1){
+  width: 30%;
+}
+.nav-container>div:nth-child(1)>img{
+  width:60%;
+  height: 98%;
+  /* border: 1px solid red; */
+}
+.nav-container>div:nth-child(2){
+  width: 100%;
+}
+.App>.info{
+  /* border: 1px solid blue; */
+  height: auto;
+  width: 100%;
+  margin-top: 120px;
+}
+.info>.container{
+  /* border: 1px solid red; */
+  height: 380px;
+  width: 60%;
+  margin: auto;
+  border-radius: 15px;
+  display:flex;
+  gap: 20px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+ z-index: 30;
+ margin-top: 30px;
+}
+.container>div{
+  /* border: 1px solid green; */
+  height: 100%;
+  width: 30%;
+  
+}
+.container>div:nth-child(2){
+  width: 100%;
+  text-align: left;
+  padding-left: 80px;
+  
+}
+.container>div:nth-child(2)>h1{
+   /* color: green; */
+   font-size: 60px;
+}
+.container>div:nth-child(2)>.tech{
+  /* border: 1px solid red; */
+  margin-top: 30px;
+  font-weight: 700;
+}
+.container>div:nth-child(1)>img{
+  width: 227px;
+  height: 240px;
+  border-radius: 100%;
+  border: 1px solid grey;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
