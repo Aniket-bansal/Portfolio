@@ -8,7 +8,12 @@ const Navbar = () => {
            
         </div>
         <div>
-
+            <button>home</button>
+          <button>Contact</button>
+          <button>Skillset</button>
+          <button>Resume</button>
+          <button>Project</button>
+          
         </div>
 
     </div>
