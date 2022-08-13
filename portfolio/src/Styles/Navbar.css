@@ -1,0 +1,75 @@
+.nav-container{
+    background-color: white;
+    display:flex;
+    position:fixed;
+    padding-bottom: 10px;
+    z-index: 12;
+    width:100%;
+    gap:5px;
+    justify-content: space-between;
+   padding-left: 50px;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+}
+.nav-Links{
+  height:50%;
+  padding-bottom: 30px;
+  padding-right: 100px;
+}
+.nav-Links ul{
+    display: flex;
+    
+     gap: 10rem;
+     font-size: 30px ;
+     justify-content: center;
+     margin-top: 20px;
+}
+.links{
+  border: 1px solid;
+  display: inline-flex;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(10deg,#ff6596,#60bef8,#d88cff);
+  padding-top:6px;
+  padding-bottom:6px;
+  padding-left:14px;
+  padding-right: 14px;
+}
+
+
+
+ .nav-Image{
+  height:120px;
+  width:220px;
+  font-size:50px;
+  margin-top: 10px;
+  font-family: 'Silkscreen', cursive;
+ }
+
+.nav-Links i{
+  display:none;
+  margin-top: 50px;
+  float:right;
+  padding-right: 30px;
+  font-size: 40px;
+}
+ @media (max-width:1605px){
+  .nav-Links ul { display: none}
+  .nav-Links i  { display:inline-block}
+ }
+ .modalcontent{
+  width:fit-content;
+  margin-left:70%;
+  background-color:#fff;
+  height:250px;
+  margin-top:150px
+  
+ }
+
+.modalBody ul{
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  padding:10px;
+  gap:20px
+}
