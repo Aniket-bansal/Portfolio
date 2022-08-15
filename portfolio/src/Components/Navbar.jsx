@@ -1,16 +1,11 @@
-import React, { useRef } from 'react'
-import logo from '../Images/logo.png'
+import React from 'react'
 import {NavLink} from 'react-router-dom'
 import  '../Styles/Navbar.css'
 import {
   Modal,
   ModalOverlay,
   ModalContent,
-  ModalHeader,
-  ModalFooter,
   ModalBody,
-  ModalCloseButton,
-  Button,
   useDisclosure,
 } from '@chakra-ui/react'
 
@@ -25,7 +20,7 @@ const activeStyle = {
   textDecoration: "none"
 };
 
-const Navbar = ({projectsRef,infoRef,skillRef,contactRef}) => {
+const Navbar = ({projectsRef,infoRef,skillRef,contactRef,homeRef}) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   
   const handleScroll=(ref)=>{
@@ -42,9 +37,13 @@ const Navbar = ({projectsRef,infoRef,skillRef,contactRef}) => {
         </div>
         <div className="nav-Links">
       <ul>
-      <NavLink className="links" onClick={()=>{handleScroll(infoRef.current)}}
+      <NavLink className="links" onClick={()=>{handleScroll(homeRef.current)}}
           style={({ isActive }) => (isActive ? activeStyle : baseStyle)}
           to={'/'}
+        >Home</NavLink>
+      <NavLink className="links" onClick={()=>{handleScroll(infoRef.current)}}
+          style={({ isActive }) => (isActive ? activeStyle : baseStyle)}
+          to={'/about'}
         >About Me</NavLink>
         <NavLink className="links" onClick={()=>{handleScroll(skillRef.current)}}
           style={({ isActive }) => (isActive ? activeStyle : baseStyle)}
