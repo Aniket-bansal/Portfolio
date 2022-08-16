@@ -10,7 +10,8 @@ const Home = () => {
             <li><span>Aniket Bansal</span></li>
             <li><span>a Fresher</span></li>
             <li><span>a Full Stack Developer</span></li>
-          </ul>
+          </ul><br/>
+        
         </div>
         <div className="profile-photo">
           <div><img src={profile} alt="profile_photo" /></div>

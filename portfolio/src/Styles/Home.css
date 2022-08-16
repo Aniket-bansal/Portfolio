@@ -1,58 +1,65 @@
-.mainContainer{
-    height:100%;
-    width:auto;
-    margin:auto;
-    /* background-color:#fff; */
-    border-radius:20px;
-    margin-top:170px;
+.mainContainer {
+    height: 100%;
+    width: auto;
+    margin: auto;
+    background-color:#fff;
+    border-radius: 20px;
+    margin-top: 170px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
+
 /* Animated text */
-.mainContainer>.text{
-    width:100%;
-    height:100%;
+.mainContainer>.text {
+    max-width: 100%;
+    height: 100%;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     padding-top: 30%;
     padding-left: 200px;
+    text-align: center;
 }
-.text .static-text{
-    color: #fff;
+
+.text .static-text {
+    color: red;
     font-size: 60px;
     font-weight: 400;
 }
-.text .dynamic-text{
-    
-    margin-left: 10px;
+
+.text .dynamic-text {
+   
     height: 90px;
     line-height: 90px;
     overflow: hidden;
 }
-.dynamic-text li{
+
+.dynamic-text li {
     list-style: none;
     color: rgb(19, 17, 17);
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 1000;
     position: relative;
     top: 0;
-    animation:slide 8s steps(4) infinite;
+    animation: slide 8s steps(4) infinite;
 }
-@keyframes slide{
-    100%{
+
+@keyframes slide {
+    100% {
         behavior: smooth;
-        top:-360px
+        top: -360px
     }
 }
-.dynamic-text li span{
+
+.dynamic-text li span {
     position: relative;
     margin: 5px 0;
     line-height: 90px;
-  }
-  .dynamic-text li span::after{
+}
+
+.dynamic-text li span::after {
     content: "";
     position: absolute;
     left: 0;
@@ -60,109 +67,170 @@
     width: 100%;
     behavior: smooth;
     animation: typing 3s steps(10) infinite;
-  }
-  @keyframes typing {
-    40%, 60%{
-      left: calc(100% + 30px);
+}
+
+@keyframes typing {
+
+    40%,
+    60% {
+        left: calc(100% + 30px);
     }
-    100%{
-      left: 0;
+
+    100% {
+        left: 0;
     }
-  }
+}
 
 /* Profile photo */
-.mainContainer>.profile-photo{
-    width:100%;
-    height:100%;
+.mainContainer>.profile-photo {
+    max-width: 100%;
+    height: 100%;
     border-radius: 20px;
     justify-content: center;
 }
-.profile-photo>div{
-    width:fit-content;
+
+.profile-photo img {
+    width: 400px;
+    height: 500px;
+    justify-content: center;
+}
+
+.profile-photo>div {
+    width: fit-content;
     margin-top: 24%;
     margin-left: 34%;
-    border-radius:50%;
+    border-radius: 60%;
     overflow: hidden;
     height: 400px;
 }
 
 /* Media Queries */
-@media (max-width:1605px){
-    .mainContainer{
+@media (max-width:1605px) {
+    .mainContainer {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        width:70%;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        text-align: center;
+        padding-left: 160px;
     }
-    .profile-photo{
+
+    .profile-photo {
         width: 50%;
         justify-content: center;
-        margin-left: -60px;
+        margin-left: -30px;
     }
-    .text{
+
+    .text {
         width: 80%;
         height: 100px;
+        
     }
-    .text .static-text{
+
+    .text .static-text {
         margin-left: 150px;
 
     }
 }
-@media (max-width:1598px){
-    .text{
-        overflow: hidden;
-    }
-    .text .static-text{
+
+@media (max-width:1598px) {
+    
+    .text .static-text {
         font-size: 50px;
         margin-top: 4px;
         margin-left: -370px;
     }
-    .text .dynamic-text{
+
+    .text .dynamic-text {
         line-height: 90px;
         position: relative;
     }
-    .text .dynamic-text li{
+
+    .text .dynamic-text li {
         font-size: 50px;
     }
-    .profile-photo{
-        margin-left: -90px;
-    }
 }
-@media (max-width:1091px){
-    .text{
+
+@media (max-width:1091px) {
+    .text {
         overflow: hidden;
     }
-    .text .static-text{
+
+    .text .static-text {
         font-size: 40px;
         margin-top: 15px;
         margin-left: -350px;
     }
-    .text .dynamic-text{
+
+    .text .dynamic-text {
         line-height: 90px;
         position: relative;
     }
-    .text .dynamic-text li{
+
+    .text .dynamic-text li {
         font-size: 40px;
     }
-    .profile-photo{
-        margin-left: -90px;
-    }
+
 }
-@media (max-width:655px){
-    .text{
-        overflow: hidden;
+@media (max-width:845px) {
+    .text {
+      margin-left: -140px;
+      padding-left: 70px;
     }
-    .text .static-text{
-        font-size: 20px;
-        margin-top: 29px;
-        margin-left: -350px;
+
+    .text .static-text {
+        font-size: 30px;
+        margin-top: 21px;
+        margin-left: -180px;
     }
-    .text .dynamic-text{
+
+    .text .dynamic-text {
         line-height: 90px;
         position: relative;
     }
-    .text .dynamic-text li{
-        font-size: 20px;
+
+    .text .dynamic-text li {
+        font-size: 30px;
     }
-    .profile-photo {
-        display: none;
+    .profile-photo>div{
+        margin-top: -130px;
+        margin-left: -10px;
+    }
+    .profile-photo img{
+        width: 400px;
+    }
+}
+
+@media (max-width:655px) {
+    .text {
+      margin-left: -140px;
+      padding-left: 70px;
+    }
+
+    .text .static-text {
+        font-size: 30px;
+        margin-top: 21px;
+        margin-left: -180px;
+    }
+
+    .text .dynamic-text {
+        line-height: 90px;
+        position: relative;
+    }
+
+    .text .dynamic-text li {
+        font-size: 30px;
+    }
+    .profile-photo>div{
+        border: 1px solid red;
+        border-radius: 100%;
+        margin-top: -140px;
+        /* margin-left: -20px; */
+        height: 290px;
+    }
+    .profile-photo img{
+        border-radius: 100%;
+        width: 290px;
+        height: 100%; 
     }
 }

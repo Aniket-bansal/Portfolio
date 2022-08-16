@@ -56,8 +56,37 @@
 
 .App>.item-container{
   border:1px solid transparent;
-  height:1100px;
-  width:90%;
+  height:1000px;
+  width:80%;
   margin:auto;
   margin-top: -130px;
+  padding: 40px;
+}
+/* border: 1px solid red; */
+/* Media Queries */
+
+@media (max-width:1605px) {
+  .item-container{
+    max-width: 100%;
+  }
+}
+
+@media (max-width:1598px) {
+  .item-container{
+    max-width: 100%;
+   
+  }
+}
+
+@media (max-width:1091px) {
+  .item-container{
+    max-width: 100%;
+   
+  }
+}
+
+@media (max-width:655px) {
+  .item-container{
+    max-width: 100%;
+  }
 }
