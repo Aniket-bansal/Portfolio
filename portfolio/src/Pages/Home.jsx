@@ -1,6 +1,6 @@
 import React from 'react'
 import '../Styles/Home.css'
-import profile from '../Images/Aniket_Bansal_Profile_Photo.JPG'
+import profile from '../Images/portfolio_profile.png'
 const Home = () => {
   return (
     <div className="mainContainer">
@@ -10,8 +10,7 @@ const Home = () => {
             <li><span>Aniket Bansal</span></li>
             <li><span>a Fresher</span></li>
             <li><span>a Full Stack Developer</span></li>
-          </ul><br/>
-        
+          </ul>
         </div>
         <div className="profile-photo">
           <div><img src={profile} alt="profile_photo" /></div>

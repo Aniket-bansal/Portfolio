@@ -17,7 +17,10 @@ div h2{
     text-align: center;
 }
 h3{
-    font-size: 50px;
+    width: 80%;
+    margin: auto;
+    color: grey;
+    font-size: 40px;
     margin-top: 10px;
 }
 img{
@@ -28,7 +31,7 @@ img{
 @media (max-width:1755px){
     .Info-mainContainer{
         padding: 10px;
-        overflow: hidden;
+        overflow: scroll;
     }
     h2{
         font-size:40px

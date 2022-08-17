@@ -68,6 +68,10 @@ const Navbar = ({projectsRef,infoRef,skillRef,contactRef,homeRef}) => {
             
             <ModalBody className="modalBody">
         <ul>
+        <NavLink className="links" onClick={()=>{handleScroll(homeRef.current)}}
+          style={({ isActive }) => (isActive ? activeStyle : baseStyle)}
+          to={'/'}
+        >Home</NavLink>
         <NavLink className="links" onClick={()=>{handleScroll(infoRef.current)}}
           style={({ isActive }) => (isActive ? activeStyle : baseStyle)}
           to={'/'}

@@ -81,12 +81,21 @@
 @media (max-width:1091px) {
   .item-container{
     max-width: 100%;
-   
+   padding: 20px 20px 20px 20px;
   }
 }
 
 @media (max-width:655px) {
   .item-container{
     max-width: 100%;
+margin-left: -10px;
+  }
+}
+
+@media (max-width:530px) {
+  .item-container{
+    /* max-width: 100%; */
+margin-left: -20px;
+height:200px;
   }
 }
